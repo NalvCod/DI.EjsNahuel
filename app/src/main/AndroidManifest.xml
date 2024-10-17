@@ -13,6 +13,9 @@
         android:theme="@style/Theme.DisenhoInterfacesLinear"
         tools:targetApi="31">
         <activity
+            android:name=".Planetas"
+            android:exported="false" />
+        <activity
             android:name=".CorreccionManue"
             android:exported="false" />
         <activity
