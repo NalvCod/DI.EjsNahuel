@@ -13,6 +13,12 @@
         android:theme="@style/Theme.DisenhoInterfacesLinear"
         tools:targetApi="31">
         <activity
+            android:name=".EjercicioFinal"
+            android:exported="false" />
+        <activity
+            android:name=".Barriers"
+            android:exported="false" />
+        <activity
             android:name=".Planetas"
             android:exported="false" />
         <activity

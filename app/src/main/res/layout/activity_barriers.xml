@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Barriers">
+
+    <TextView
+        android:id="@+id/Cuerpo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="KSJDKL SDFJDLKF JDSFLKJ DSDSSDFDSFSFJFS
+        SDFLKJLSDKFJSLDK FJSDKLFJSLDFKJDSKLFJDS FLKJSDF
+        SDKFJ SDLFKJ SDLKFJ SDLFKJ FDKJSDFLKJDSF
+        SDKFJSDLFJLSDKFJLSKDFJLSDKFJLSDKFJLKSDJFLKSDFJLKSDJFLKSDFJLKSDFJKLSDFKJ
+        SDKFJSLDKFJSDLKFJLSDKFJFDSLK SDKLFJSDLFKJSDLKFJSDLKFJSDLFKJFSDLKJFSDL"
+        app:layout_constraintStart_toEndOf="@+id/BarreraVert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/foto"/>
+
+    <TextView
+        android:id="@+id/Titulo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elemento 1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo2"
+        app:layout_constraintStart_toStartOf="parent"
+ />
+
+    <TextView
+        android:id="@+id/Titulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elemento 2esfsdsd5"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/BarreraVert"/>
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/BarreraVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Titulo1, Titulo2"
+        app:barrierDirection="right" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cuerpo"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
